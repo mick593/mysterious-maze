@@ -1,0 +1,49 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://fonts/Xolonium-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://CherryCreamSoda-Regular.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 44
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 33
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 33
+font_data = ExtResource( 2 )
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="ScoreLabel" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 1 )
+text = "0
+"
+
+[node name="Message" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -512.0
+margin_right = 139.0
+margin_bottom = 143.0
+rect_scale = Vector2( 1.56712, 4.18969 )
+custom_fonts/font = SubResource( 2 )
+text = "ESCAPE THE MAZE"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -198.5
+margin_top = -64.0
+margin_right = 198.5
+custom_fonts/font = SubResource( 3 )
+text = "Press SPACE to start"
